@@ -1,7 +1,7 @@
 
 simple server
 {
-    @display("i=abstract/accesspoint");
+    @display("i=device/server;p=230,40");
     gates:
         input radioIn @directIn;
 }
@@ -11,7 +11,7 @@ simple server
 //
 simple client
 {
-    @display("i=abstract/accesspoint");
+    @display("i=device/wifilaptop;p=230,40");
     gates:
         input radioIn @directIn;
 }
@@ -30,4 +30,5 @@ network Network
             @display("p=236,77");
         }
 }
+
 

@@ -1,29 +1,33 @@
-simple Server
+
+simple server
 {
     @display("i=device/server;p=230,40");
     gates:
         input radioIn @directIn;
 }
 
-
-simple Client
+//
+// TODO documentation
+//
+simple client
 {
     @display("i=device/wifilaptop;p=230,40");
     gates:
         input radioIn @directIn;
 }
+
 //
 // TODO documentation
 //
 network Network
 {
-    @display("bgb=333,229");
+    @display("bgb=391,226");
     submodules:
-        Server: Server {
-            @display("p=264,118;is=l");
+        Server: server {
+            @display("p=62,73");
         }
-        Client: Client {
-            @display("p=64,113;is=l");
+        Client: client {
+            @display("p=236,77");
         }
 }
 
