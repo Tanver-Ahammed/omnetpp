@@ -1,10 +1,3 @@
-/*
- * Server.cc
- *
- *  Created on: Oct 6, 2022
- *      Author: tanver
- */
-
 #include<omnetpp.h>
 using namespace omnetpp;
 
@@ -24,4 +17,3 @@ void Server::handleMessage(cMessage *msg) {
     cModule *target = getParentModule() -> getSubmodule("Client");
     sendDirect(msg, target, "radioIn");
 }
-

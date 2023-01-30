@@ -1,9 +1,3 @@
-/*
- * Client.cc
- *
- *  Created on: Oct 6, 2022
- *      Author: tanver
- */
 #include<omnetpp.h>
 using namespace omnetpp;
 
@@ -33,7 +27,3 @@ void Client::handleMessage(cMessage *msg) {
     scheduleAt(simTime() + dblrand(), msg->dup());
 
 }
-
-
-
-
