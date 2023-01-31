@@ -24,7 +24,6 @@ void Server::initialize(){
 void Server :: handleMessage(cMessage *msg) {
     if (strcmp("RTS", msg->getFullName())==0) {
         msg= new cMessage("CTS");
-
     }
     else if(strcmp("DATA", msg->getFullName())==0){
         msg = new cMessage("ACK");
